@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<style>
+#scrollview-container {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid green;
+}
+</style>
+
+    <div id="scrollview-container">
+
+
+
+    <!-- Content Box, which is scrolled using either top/left, or transform:translate, where supported -->
+    <div class="yui3-scrollview-content" id="scrollable" style="height: 310px;">
+      <ul>
+          <li>AC/DC</li>
+          <li>Aerosmith</li>
+          <li>Billy Joel</li>
+          <li>Bob Dylan</li>
+          <li>Bob Seger</li>
+          <li>Bon Jovi</li>
+          <li>Bruce Springsteen</li>
+          <li>Creed</li>
+          <li>Creedence Clearwater Revival</li>
+          <li>Dave Matthews Band</li>
+          <li>Def Leppard</li>
+          <li>Eagles</li>
+          <li>Eminem</li>
+          <li>Fleetwood Mac</li>
+          <li>Green Day</li>
+          <li>Rush</li>
+          <li>Santana</li>
+          <li>Simon and Garfunkel</li>
+          <li>Steve Miller Band</li>
+          <li>The Beatles</li>
+          <li>The Doors</li>
+          <li>The Police</li>
+          <li>The Rolling Stones</li>
+          <li>Tom Petty</li>
+          <li>U2</li>
+          <li>Van Halen</li>
+          <li>Willie Nelson</li>
+          <li>ZZ Top</li>
+      </ul>
+    </div>
+
+    <!-- Scrollbar indicator, if Scrollbar Plugin is added (added by default for the "scrollview" module) -->
+    <div class="yui3-scrollview-scrollbar yui3-scrollview-scrollbar-vert">
+        <span class="yui3-scrollview-child yui3-scrollview-first"></span>
+        <span class="yui3-scrollview-child yui3-scrollview-middle"></span>
+        <span class="yui3-scrollview-child yui3-scrollview-last"></span>
+    </div>
+
+</div>
+
+
+
+
+    <div id="additional-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam hendrerit elit id vulputate. Pellentesque pellentesque erat rutrum velit facilisis sodales convallis tellus lacinia. Curabitur gravida mi sit amet nulla suscipit sed congue dolor volutpat. Aenean sem tortor, pretium et euismod in, imperdiet sit amet urna. Ut ante nisi, auctor mattis suscipit a, ullamcorper eget leo. Phasellus sagittis ante at lectus rutrum ut sollicitudin sem malesuada. Duis ultrices sapien et nulla tincidunt malesuada. Mauris ante turpis, dignissim eu tincidunt vitae, placerat quis diam. In augue nisl, cursus at rutrum ut, scelerisque et erat. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris orci dui, aliquam ut convallis ut, dapibus et erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Mauris placerat elit id lectus rhoncus in dignissim justo mollis. Donec nec odio sapien. In iaculis euismod felis non laoreet. Mauris ornare varius neque, et congue erat porta a. Aliquam nec auctor lectus. Etiam ut ipsum a nibh iaculis fringilla.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam hendrerit elit id vulputate. Pellentesque pellentesque erat rutrum velit facilisis sodales convallis tellus lacinia. Curabitur gravida mi sit amet nulla suscipit sed congue dolor volutpat. Aenean sem tortor, pretium et euismod in, imperdiet sit amet urna. Ut ante nisi, auctor mattis suscipit a, ullamcorper eget leo. Phasellus sagittis ante at lectus rutrum ut sollicitudin sem malesuada. Duis ultrices sapien et nulla tincidunt malesuada. Mauris ante turpis, dignissim eu tincidunt vitae, placerat quis diam. In augue nisl, cursus at rutrum ut, scelerisque et erat. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris orci dui, aliquam ut convallis ut, dapibus et erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Mauris placerat elit id lectus rhoncus in dignissim justo mollis. Donec nec odio sapien. In iaculis euismod felis non laoreet. Mauris ornare varius neque, et congue erat porta a. Aliquam nec auctor lectus. Etiam ut ipsum a nibh iaculis fringilla.</p>
+    </div>
+
+    <script type="text/javascript" charset="utf-8">
+
+        YUI().use('scrollview', function(Y) {
+            var scrollview = new Y.ScrollView({
+                srcNode: '#scrollable',
+                height: '50em',
+                flick: {
+                    minDistance:10,
+                    minVelocity:0.3,
+                    axis: "y"
+                }
+            });
+            scrollview.render();
+        });
+
+    </script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
+    <!-- <script src="js/students.js"></script> -->
+    <!-- <script src="js/teachers.js"></script> -->
+    <!-- <script src="js/keySelect.js"></script> -->
+    <script>
+
+
+
+      const getScrollToBlock = (blockHeigh = 190, targetBlock = `.user-course__scroll`) => {
+
+        YUI().use('scrollview', function(Y) {
+
+            const scrollView = new Y.ScrollView({
+              srcNode: '.'+currentScrollClass,
+              height: blockHeigh
+            });
+
+            scrollView.render();
+
+        });
+      }
+
+    </script>
+
+  </body>
+</html>
